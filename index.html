@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea house</title>
+    <!--tailwind and daisy ui-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--font awesome library cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--tailwind customs color-->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- font manrope-->
+  </head>
+  <body>
+    <header class="max-h-max">
+      <!--hero -->
+      <div class="hero bg-base-200 min-h-screen">
+        <div class="hero-content flex-row">
+          <div>
+            <h1 class="text-5xl font-bold">
+              Its goods <br />
+              tea time at the <br />Tea house
+            </h1>
+            <p class="py-6">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
+              sequi totam culpa corrupti tempore minima ex mollitia eius?
+              Facilis, officiis!
+            </p>
+            <button class="btn btn-primary">Explore more</button>
+          </div>
+          <div>
+            <img src="tea-house-resources/images/banner.png" class="max-w-sm" />
+            <div
+              class="flex -mt-20 items-center gap-6 shadow-rose-100 bg-slate-100 p-5 w-60"
+            >
+              <i class="fa-solid fa-star text-5xl text-warning"></i>
+              <div>
+                <h2 class="text-5xl">5.00</h2>
+                <h1>trust pilot rating</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
