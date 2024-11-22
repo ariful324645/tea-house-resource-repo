@@ -22,8 +22,9 @@
     <!--tailwind customs color-->
     
     <!-- font manrope-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
-  <body>
+  <body> 
     <header class="container mx-auto">
       <!-- navbar -->
       <div class="navbar bg-base-100">
@@ -310,19 +311,19 @@
 
 
       <!--News and event-->
-      <section>
+      <section class="mt-10">
         <div class="space-y-6">
           <h1 class="text-3xl font-extrabold text-center ">News and event</h1>
           <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis sit quas veniam rem. Nostrum atque quis quo explicabo unde molestiae?</p>
         </div>
         <!--card-->
-        <div class="mt-10 grid grid-cols-1 lg:grid-cols-3">
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <!--card 1-->
           <div class="bg-white w-96 shadow-xl  border-4 rounded-lg  ">
             <figure>
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                alt="Shoes" />
+              <img 
+                src="tea-house-resources/images/news-1.png"
+                alt="tea" />
             </figure>
             <div class="card-body">
               <h1 class="justify-start" >Feb 05 ,2007</h1>
@@ -335,8 +336,8 @@
              <div class="bg-white border-4 w-96 shadow-xl">
               <figure>
                 <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  alt="Shoes" />
+                  src="tea-house-resources/images/news-2.png"
+                  alt="tea" />
               </figure>
               <div class="card-body">
                 <h1 class="justify-start" >Feb 05 ,2007</h1>
@@ -349,8 +350,8 @@
           <div class="bg-white border-4 w-96 shadow-xl">
             <figure>
               <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                alt="Shoes" />
+                src="tea-house-resources/images/news-1.png"
+                alt="News" />
             </figure>
             <div class="card-body">
               <h1 class="justify-start" >Feb 05 ,2007</h1>
@@ -361,7 +362,65 @@
           </div>
         </div>
       </section>
+      <!--footer-->
+      <footer class="footer bg-base-200 text-base-content p-4 lg:p-10"></footer>
+      
+        <div class="flex justify-between p-4 lg:p-10">
+          <img class="bg-white" src="tea-house-resources/images/cup.png" alt="">
+          <div class="flex justify-center gap-6">
+            <h2>Ready to get started</h2>
+            <button class="btn btn-primary">Start</button>
+          </div>
+
+        </div>
+        
+      <div class="flex justify-evenly">
+        <nav class="">
+          <h6 class="footer-title">Services</h6>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Company</h6>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Legal</h6>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+      </div>
+        <form class="flex justify-between">
+          <h6 class="footer-title">Newsletter</h6>
+          <fieldset class="gap-10 flex justify-evenly">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="join">
+          
+              <button class="btn btn-primary join-item bg-white"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          </fieldset>
+        </form>
+        <section>
+          <div class="footer footer-center p-4">
+            <aside>
+              <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+            </aside>
+          </div>
+        </section>
+      </footer>
     </main>
+
+
+ 
+ 
    
   </body>
 </html>
